@@ -1,9 +1,11 @@
-phantomjs:
-  build: .
-#  image: yfix/phantomjs
-  container_name: yfix_phantomjs
-  ports:
-    - 30084:8080
-  restart: always
-#  volumes:
-#    - .:/app
+version: '2'
+services:
+  phantomjs:
+    build: .
+#    image: yfix/phantomjs
+    container_name: yfix_phantomjs
+    ports:
+      - 30084:8080
+    restart: always
+#    volumes:
+#      - .:/app
